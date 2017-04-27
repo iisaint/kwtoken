@@ -1,7 +1,7 @@
 
 	if (typeof erc20contract_address == "undefined") {
-		var erc20contract_address = "0x8E22892c308812F9bCdF67cf34a9e94227eb3ce9";
-		var option_etherscan_api = 'https://ropsten.etherscan.io'; //change to https://api.etherscan.io for mainnet
+		var erc20contract_address = "0xf0Afe25A70473AfFa2E14B1708d84E8Bca4c309D";
+		var option_etherscan_api = 'https://kovan.etherscan.io'; //change to https://api.etherscan.io for mainnet
 		var option_registration_enabled = true;
 		var option_registration_backend = '';///'subscribe.php'; //you can use remote address like https://yoursite.com/subscribe.php
 		var option_recive_btc = ''; //reserved for future
