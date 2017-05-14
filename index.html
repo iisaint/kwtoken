@@ -86,7 +86,10 @@
 								
 								<div id='balancediv'>
 								 <span class='balacnetokens'></span> TOKEN(s) you have<Br><br>
+								 <span class='claimtokens'></span> TOKEN(s) you have claimed<Br><br>
+								 TOKEN sell price: <span class='tokenPrice'></span> ether<Br><br>
 								</div>
+
 								<span id='uniqkey' >Your unique PUBLIC key: <span id='openkeyspan'></span> </span>
 								
 								
@@ -97,6 +100,30 @@
                     <!-- .b-form-cont -->
                 </div>
 
+
+				<div class="col-md-6 tabs" id='claimToken'>
+ 
+					<!-- .b-form-cont -->
+                    <div class="b-form-cont">
+						<h2 class="b-form-cont__title">Claim tokens</h2> 
+							<div class="b-form b-form--place container-fluid">
+								<div class='b-form__row'>
+									Amount: <Br>
+									<input type='text' id='claim_amount' style='margin-bottom:20px' value=''>
+									<input type='button' onclick='try2claim()' class='btn' name='BTN' value='Claim'>
+									<span id='consoleclaim'></span>
+									<script>
+									function try2claim() {
+										$("#consoleclaim").html('.:...::');
+										sendRwTr(0,[$("#claim_amount").val()],"claimToken","#consoleclaim");
+									}
+									</script>
+								</div>
+								
+							</div>
+					</div>
+                    <!-- .b-form-cont -->
+                </div>
 
 				<div class="col-md-6 tabs" id='sendtokens'>
  
